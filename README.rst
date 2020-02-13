@@ -1,13 +1,7 @@
-Cookiecutter pyOpenSci
-======================
+Cookiecutter simple pyOpenSci
+=============================
 
-.. image:: https://travis-ci.org/pyOpenSci/cookiecutter-pyopensci.svg?branch=master
-    :target: https://travis-ci.org/pyOpenSci/cookiecutter-pyopensci
-
-.. image:: https://ci.appveyor.com/api/projects/status/github/pyOpenSci/cookiecutter-pyopensci?branch=master&svg=true
-    :target: https://ci.appveyor.com/project/pyOpenSci/cookiecutter-pyopensci/branch/master
-
-**Cookiecutter** template for a pyOpenSci Python packge.
+Simplified **Cookiecutter** Python package template based of the ookiecutter** template for a pyOpenSci Python package. Docs for the original are here:
 
 -  GitHub repo: https://github.com/pyOpenSci/cookiecutter-pyopensci
 -  Documentation: https://cookiecutter-pyopensci.readthedocs.io/
@@ -16,15 +10,8 @@ Cookiecutter pyOpenSci
 
 Features
 --------
-
--  **Tox** and **pytest** testing: Setup to easily test for Python 2.7,
-   3.4, 3.5, 3.6
--  **Travis-CI**: Ready for Travis Continuous Integration testing
--  **codecov**: Code coverage report and badge using codecov and Travis
 -  **Sphinx** docs: Documentation ready for generation with, for
    example, **ReadTheDocs**
--  **Bumpversion**: Pre-configured version bumping with a single command
--  Auto-release to **PyPI** when you push a new tag to master (optional)
 
 Quickstart
 ----------
@@ -40,7 +27,7 @@ Generate a Python package project:
 
 ::
 
-    cookiecutter https://github.com/pyOpenSci/cookiecutter-pyopensci.git
+    cookiecutter https://github.com/UBC-MDS/cookiecutter-pyopensci.git
 
 For more details, see the
 ```cookiecutter-pyopensci tutorial`` <https://cookiecutter-pyopensci.readthedocs.io/en/latest/tutorial.html>`__
