@@ -107,15 +107,6 @@ def test_bake_with_apostrophe_and_run_tests(cookies):
         assert result.project.isdir()
         run_inside_dir('python setup.py test', str(result.project)) == 0
 
-
-def test_bake_without_travis_pypi_setup(cookies):
-    with bake_in_temp_dir(cookies, extra_context={'use_pypi_deployment_with_travis': 'n'}) as result:
-        result_travis_config = yaml.load(result.project.join(".travis.yml").open())
-        assert "deploy" not in result_travis_config
-        assert "python" == result_travis_config["language"]
-        found_toplevel_files = [f.basename for f in result.project.listdir()]
-
-
 def test_make_help(cookies):
     with bake_in_temp_dir(cookies) as result:
         output = check_output_inside_dir('make help', str(result.project))
